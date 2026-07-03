@@ -53,7 +53,7 @@ export default async function StoryPage({
             alt={t("title")}
             width={600}
             height={340}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-bottom"
           />
         </WoodFrame>
       </div>
