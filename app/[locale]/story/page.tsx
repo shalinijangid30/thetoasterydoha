@@ -19,12 +19,11 @@ export default async function StoryPage({
 
       <div className="grid md:grid-cols-2 gap-12 items-center mt-10">
         <WoodFrame className="aspect-[4/3] overflow-hidden">
-          <video
-            src={assetPath("/videos/toast1.mp4")}
-            autoPlay
-            muted
-            loop
-            playsInline
+          <Image
+            src={assetPath("/images/story-2.jpeg")}
+            alt={t("title")}
+            width={600}
+            height={450}
             className="w-full h-full object-cover"
           />
         </WoodFrame>
@@ -41,7 +40,7 @@ export default async function StoryPage({
       <div className="grid grid-cols-2 gap-4 mt-16">
         <WoodFrame className="aspect-video overflow-hidden">
           <Image
-            src={assetPath("/images/hero.jpeg")}
+            src={assetPath("/images/story-3.jpeg")}
             alt={t("title")}
             width={600}
             height={340}
@@ -49,12 +48,11 @@ export default async function StoryPage({
           />
         </WoodFrame>
         <WoodFrame className="aspect-video overflow-hidden">
-          <video
-            src={assetPath("/videos/toast2.mp4")}
-            autoPlay
-            muted
-            loop
-            playsInline
+          <Image
+            src={assetPath("/images/story-4.jpeg")}
+            alt={t("title")}
+            width={600}
+            height={340}
             className="w-full h-full object-cover"
           />
         </WoodFrame>
