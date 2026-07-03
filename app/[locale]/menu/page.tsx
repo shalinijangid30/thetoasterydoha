@@ -7,14 +7,26 @@ type MenuItem = { name: string; desc: string; price: string };
 
 const itemImages: Record<string, string[]> = {
   coffee: ["/images/menu-item-1.jpeg", "/images/menu-item-2.jpeg"],
-  iceCreamToasts: [
+  iceCream: [
     "/images/menu-item-3.jpeg",
     "/images/menu-item-4.jpeg",
     "/images/menu-item-5.jpeg",
-    "/images/menu-item-6.jpeg",
   ],
-  seasonal: [],
+  dessert: ["/images/menu-item-6.jpeg"],
 };
+
+const categoryKeys = [
+  "coffee",
+  "milkBased",
+  "coldDrinks",
+  "flatbread",
+  "sandwiches",
+  "pastries",
+  "dessert",
+  "drinks",
+  "teaPots",
+  "iceCream",
+] as const;
 
 export default async function MenuPage({
   params,
@@ -25,11 +37,7 @@ export default async function MenuPage({
   setRequestLocale(locale);
   const t = await getTranslations("menu");
 
-  const categories: { key: "coffee" | "iceCreamToasts" | "seasonal" }[] = [
-    { key: "coffee" },
-    { key: "iceCreamToasts" },
-    { key: "seasonal" },
-  ];
+  const categories = categoryKeys.map((key) => ({ key }));
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
