@@ -17,16 +17,16 @@ export function LocaleSwitcher() {
       <button
         onClick={() => switchTo("en")}
         className={`px-2 py-1 rounded-sm ${
-          locale === "en" ? "bg-ink text-cream" : "text-ink/70"
+          locale === "en" ? "bg-butter text-ink" : "text-cream/70"
         }`}
       >
         EN
       </button>
-      <span className="text-ink/30">/</span>
+      <span className="text-cream/30">/</span>
       <button
         onClick={() => switchTo("ar")}
         className={`px-2 py-1 rounded-sm ${
-          locale === "ar" ? "bg-ink text-cream" : "text-ink/70"
+          locale === "ar" ? "bg-butter text-ink" : "text-cream/70"
         }`}
       >
         AR

@@ -3,6 +3,19 @@ import { WoodFrame } from "@/components/wood-frame";
 
 type MenuItem = { name: string; desc: string; price: string };
 
+const categoryKeys = [
+  "coffee",
+  "milkBased",
+  "coldDrinks",
+  "flatbread",
+  "sandwiches",
+  "pastries",
+  "dessert",
+  "drinks",
+  "teaPots",
+  "iceCream",
+] as const;
+
 export default async function MenuPage({
   params,
 }: {
@@ -12,11 +25,7 @@ export default async function MenuPage({
   setRequestLocale(locale);
   const t = await getTranslations("menu");
 
-  const categories: { key: "coffee" | "iceCreamToasts" | "seasonal" }[] = [
-    { key: "coffee" },
-    { key: "iceCreamToasts" },
-    { key: "seasonal" },
-  ];
+  const categories = categoryKeys.map((key) => ({ key }));
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">

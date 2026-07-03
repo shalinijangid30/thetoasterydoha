@@ -20,7 +20,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b-4 border-butter">
+    <header className="sticky top-0 z-50 bg-ink/95 backdrop-blur border-b-4 border-butter text-cream">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold lowercase tracking-tight">
           the toastery
@@ -31,8 +31,8 @@ export function Header() {
             <Link
               key={l.href}
               href={l.href}
-              className={`transition-colors hover:text-wood-dark ${
-                pathname === l.href ? "text-wood-dark font-medium" : "text-ink/80"
+              className={`transition-colors hover:text-butter ${
+                pathname === l.href ? "text-butter font-medium" : "text-cream/80"
               }`}
             >
               {l.label}
@@ -59,8 +59,8 @@ export function Header() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className={`py-2 border-b border-butter/50 ${
-                pathname === l.href ? "text-wood-dark font-medium" : "text-ink/80"
+              className={`py-2 border-b border-butter/30 ${
+                pathname === l.href ? "text-butter font-medium" : "text-cream/80"
               }`}
             >
               {l.label}

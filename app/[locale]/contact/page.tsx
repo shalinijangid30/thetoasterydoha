@@ -19,7 +19,7 @@ export default async function ContactPage({
       <WoodFrame className="mt-10 p-8 grid gap-4">
         <a
           href={`mailto:${siteConfig.email}`}
-          className="bg-butter hover:bg-butter-dark transition-colors px-6 py-3 rounded-sm font-medium"
+          className="bg-ink text-cream hover:bg-wood-dark transition-colors px-6 py-3 rounded-sm font-medium"
         >
           {t("email")} — {siteConfig.email}
         </a>
@@ -27,7 +27,7 @@ export default async function ContactPage({
           href={whatsappLink("Hi! I have a question for The Toastery.")}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#25D366] text-white hover:opacity-90 transition-opacity px-6 py-3 rounded-sm font-medium"
+          className="bg-ink text-cream hover:bg-wood-dark transition-colors px-6 py-3 rounded-sm font-medium"
         >
           {t("whatsapp")}
         </a>
@@ -35,7 +35,7 @@ export default async function ContactPage({
           href={siteConfig.instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-wood text-cream hover:bg-wood-dark transition-colors px-6 py-3 rounded-sm font-medium"
+          className="bg-ink text-cream hover:bg-wood-dark transition-colors px-6 py-3 rounded-sm font-medium"
         >
           {t("instagram")}
         </a>

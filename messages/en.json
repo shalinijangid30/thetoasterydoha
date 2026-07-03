@@ -26,24 +26,106 @@
     "subtitle": "small batch, made to order",
     "categories": {
       "coffee": "coffee",
-      "iceCreamToasts": "ice-cream toasts",
-      "seasonal": "seasonal specials"
+      "milkBased": "milk-based beverages",
+      "coldDrinks": "cold drinks",
+      "flatbread": "flatbread",
+      "sandwiches": "sandwiches",
+      "pastries": "pastries",
+      "dessert": "dessert",
+      "drinks": "drinks",
+      "teaPots": "tea pots",
+      "iceCream": "ice cream"
     },
     "items": {
       "coffee": [
-        { "name": "espresso", "desc": "single origin, pulled fresh", "price": "QAR 12" },
-        { "name": "flat white", "desc": "silky microfoam, double shot", "price": "QAR 18" },
-        { "name": "iced spanish latte", "desc": "condensed milk, cold brew", "price": "QAR 20" },
-        { "name": "toastery mocha", "desc": "house cocoa, espresso, steamed milk", "price": "QAR 22" }
+        { "name": "espresso", "desc": "rich and bold, pulled fresh", "price": "qar 18" },
+        { "name": "americano", "desc": "double shot, hot water", "price": "qar 18" },
+        { "name": "flat white", "desc": "silky microfoam, double shot", "price": "qar 26" },
+        { "name": "cappuccino", "desc": "espresso, steamed milk, thick foam", "price": "qar 28" },
+        { "name": "white mocha", "desc": "espresso, white chocolate, steamed milk", "price": "qar 28" },
+        { "name": "latte", "desc": "espresso, steamed milk", "price": "qar 26" },
+        { "name": "spanish latte", "desc": "condensed milk, espresso", "price": "qar 28" },
+        { "name": "v60", "desc": "hand-poured, single origin", "price": "qar 28" },
+        { "name": "arabic coffee pot", "desc": "traditional blend, served in a pot", "price": "qar 78" },
+        { "name": "cortado", "desc": "equal parts espresso and steamed milk", "price": "qar 28" }
       ],
-      "iceCreamToasts": [
-        { "name": "classic vanilla toast", "desc": "brioche, vanilla bean ice cream, honey drizzle", "price": "QAR 28" },
-        { "name": "pistachio crunch", "desc": "pistachio ice cream, toasted nuts, date syrup", "price": "QAR 32" },
-        { "name": "biscoff bliss", "desc": "biscoff ice cream, cookie crumble, caramel", "price": "QAR 30" },
-        { "name": "berry cream toast", "desc": "strawberry ice cream, fresh berries, cream", "price": "QAR 30" }
+      "milkBased": [
+        { "name": "matcha", "desc": "stone-ground green tea, steamed milk", "price": "qar 30" },
+        { "name": "matcha strawberry", "desc": "matcha, strawberry, steamed milk", "price": "qar 32" },
+        { "name": "matcha lemonade", "desc": "matcha, fresh lemonade", "price": "qar 32" },
+        { "name": "vanilla milkshake", "desc": "creamy vanilla blend", "price": "qar 28" },
+        { "name": "hot chocolate", "desc": "house cocoa, steamed milk", "price": "qar 30" },
+        { "name": "slushy laban", "desc": "frozen yogurt drink", "price": "qar 32" },
+        { "name": "karak", "desc": "spiced milk tea", "price": "qar 10" }
       ],
-      "seasonal": [
-        { "name": "seasonal special", "desc": "ask our team what's fresh this week", "price": "market price" }
+      "coldDrinks": [
+        { "name": "fresher", "desc": "lemon and mint", "price": "qar 30" }
+      ],
+      "flatbread": [
+        { "name": "margarita", "desc": "pizza dough, cheese and tomato sauce", "price": "qar 45" },
+        { "name": "zaatar halloumi", "desc": "pizza dough, zaatar, olive oil and halloumi cheese", "price": "qar 45" },
+        { "name": "spicy chicken", "desc": "pizza dough, grilled chicken, cheese, jalapeño and tomato sauce", "price": "qar 45" }
+      ],
+      "sandwiches": [
+        { "name": "triple cheese", "desc": "multicereal bread, cheddar, white cheese, mozzarella, dry basil", "price": "qar 54" },
+        { "name": "buffalo mozzarella", "desc": "baguette, mozzarella cheese, strawberry salad, tomato, pesto", "price": "qar 55" },
+        { "name": "halloumi", "desc": "baguette bread, halloumi cheese and pesto", "price": "market price" },
+        { "name": "peri peri chicken", "desc": "toast bread, butter, chicken and peri peri sauce", "price": "qar 57" },
+        { "name": "turkey mozzarella", "desc": "bread, mozzarella cheese, cheddar cheese, lettuce, mayonnaise and turkey", "price": "market price" },
+        { "name": "egg sandwich", "desc": "bread, egg, cheddar cheese, kashkaval cheese, cream, lettuce, salt, pepper and mayonnaise", "price": "market price" },
+        { "name": "spicy tuna", "desc": "baguette bread, tuna, jalapeño", "price": "market price" }
+      ],
+      "pastries": [
+        { "name": "plain croissant", "desc": "buttery, baked fresh", "price": "qar 30" },
+        { "name": "cheese croissant", "desc": "baked croissant and cheddar cheese", "price": "qar 32" },
+        { "name": "zaatar croissant", "desc": "baked croissant and zaatar", "price": "qar 32" },
+        { "name": "almond croissant", "desc": "baked croissant and almond cream", "price": "qar 35" },
+        { "name": "danish", "desc": "flaky, lightly sweet pastry", "price": "qar 28" }
+      ],
+      "dessert": [
+        { "name": "honey toast", "desc": "warm brioche, honey drizzle", "price": "qar 55" },
+        { "name": "strawberry with chocolate", "desc": "fresh strawberries, dipped chocolate", "price": "qar 40" },
+        { "name": "mini cookies", "desc": "set of 5", "price": "qar 27" },
+        { "name": "double chocolate cookie", "desc": "rich cocoa cookie", "price": "qar 29" },
+        { "name": "classic cookie", "desc": "buttery house recipe", "price": "qar 28" },
+        { "name": "mango cheesecake", "desc": "creamy, topped with mango", "price": "qar 46" },
+        { "name": "strawberry cheesecake", "desc": "creamy, topped with strawberry", "price": "qar 46" },
+        { "name": "avenue montaigne cake", "desc": "house signature layer cake", "price": "qar 44" },
+        { "name": "carrot cake", "desc": "spiced, cream cheese frosting", "price": "qar 55" },
+        { "name": "choux rolls", "desc": "cream-filled choux pastry", "price": "qar 59" },
+        { "name": "millefeuille", "desc": "layered puff pastry, cream", "price": "qar 55" },
+        { "name": "s'mores cake", "desc": "chocolate, marshmallow, biscuit", "price": "qar 48" },
+        { "name": "brownies", "desc": "fudgy, rich chocolate", "price": "qar 20" }
+      ],
+      "drinks": [
+        { "name": "matcha", "desc": "stone-ground green tea", "price": "qar 30" },
+        { "name": "hot chocolate", "desc": "house cocoa, steamed milk", "price": "qar 30" },
+        { "name": "karak", "desc": "spiced milk tea", "price": "qar 15" },
+        { "name": "peach iced tea", "desc": "chilled, fruity", "price": "qar 28" },
+        { "name": "passion fruit iced tea", "desc": "chilled, fruity", "price": "qar 28" },
+        { "name": "strawberry iced tea", "desc": "chilled, fruity", "price": "qar 28" },
+        { "name": "hibiscus/berries refresher", "desc": "chilled hibiscus and berries", "price": "qar 30" },
+        { "name": "vimto lemonade", "desc": "vimto and fresh lemonade", "price": "qar 28" },
+        { "name": "pink lemonade", "desc": "fresh and fruity", "price": "qar 28" },
+        { "name": "lemonade", "desc": "fresh squeezed", "price": "qar 28" },
+        { "name": "date shake", "desc": "creamy date blend", "price": "qar 28" },
+        { "name": "banana milkshake", "desc": "creamy banana blend", "price": "qar 28" },
+        { "name": "vanilla milkshake", "desc": "creamy vanilla blend", "price": "qar 28" },
+        { "name": "big water", "desc": "large bottle", "price": "qar 7" },
+        { "name": "small water", "desc": "small bottle", "price": "qar 5" }
+      ],
+      "teaPots": [
+        { "name": "black tea", "desc": "classic pot, serves two", "price": "qar 32" },
+        { "name": "english breakfast", "desc": "classic pot, serves two", "price": "qar 32" },
+        { "name": "green tea", "desc": "classic pot, serves two", "price": "qar 35" },
+        { "name": "earl grey", "desc": "classic pot, serves two", "price": "qar 35" },
+        { "name": "jasmine", "desc": "classic pot, serves two", "price": "qar 34" },
+        { "name": "herbal", "desc": "classic pot, serves two", "price": "qar 36" }
+      ],
+      "iceCream": [
+        { "name": "toast", "desc": "flavors: vanilla, chocolate, pistachio, caramel, lemon, banana. toppings +3 qar, sauces +3 qar", "price": "qar 24" },
+        { "name": "waffer", "desc": "flavors: vanilla, chocolate, pistachio, caramel, lemon, banana. toppings +3 qar, sauces +3 qar", "price": "qar 22" },
+        { "name": "cone/cup", "desc": "flavors: vanilla, chocolate, pistachio, caramel, lemon, banana. toppings +3 qar, sauces +3 qar", "price": "qar 18" }
       ]
     },
     "note": "prices and availability may vary — ask in-store for today's specials"
