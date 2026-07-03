@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { WoodFrame } from "@/components/wood-frame";
+import { assetPath } from "@/lib/asset-path";
 
 export default async function StoryPage({
   params,
@@ -19,7 +20,7 @@ export default async function StoryPage({
       <div className="grid md:grid-cols-2 gap-12 items-center mt-10">
         <WoodFrame className="aspect-[4/3]">
           <Image
-            src="/images/story-1.jpeg"
+            src={assetPath("/images/story-1.jpeg")}
             alt={t("title")}
             width={600}
             height={450}
@@ -39,7 +40,7 @@ export default async function StoryPage({
       <div className="grid grid-cols-2 gap-4 mt-16">
         <WoodFrame className="aspect-video overflow-hidden">
           <video
-            src="/videos/toast1.mp4"
+            src={assetPath("/videos/toast1.mp4")}
             autoPlay
             muted
             loop
@@ -49,7 +50,7 @@ export default async function StoryPage({
         </WoodFrame>
         <WoodFrame className="aspect-video overflow-hidden">
           <video
-            src="/videos/toast2.mp4"
+            src={assetPath("/videos/toast2.mp4")}
             autoPlay
             muted
             loop

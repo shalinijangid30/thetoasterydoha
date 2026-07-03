@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { WoodFrame } from "@/components/wood-frame";
 import { StripeSection } from "@/components/stripe-section";
+import { assetPath } from "@/lib/asset-path";
 
 export default async function HomePage({
   params,
@@ -36,7 +37,7 @@ export default async function HomePage({
             </div>
             <WoodFrame className="aspect-square">
               <Image
-                src="/images/hero.jpeg"
+                src={assetPath("/images/hero.jpeg")}
                 alt="the toastery"
                 width={600}
                 height={600}
@@ -51,7 +52,7 @@ export default async function HomePage({
       <section className="mx-auto max-w-6xl px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
         <WoodFrame className="aspect-[4/3] order-2 md:order-1">
           <Image
-            src="/images/story-1.jpeg"
+            src={assetPath("/images/story-1.jpeg")}
             alt="our story"
             width={600}
             height={450}
@@ -68,10 +69,10 @@ export default async function HomePage({
         <h2 className="text-3xl font-bold mb-8">{h("galleryTitle")}</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {["/images/menu-1.jpeg", "/images/menu-2.jpeg", "/images/gallery-1.jpeg", "/images/hero.jpeg"].map(
-            (src) => (
-              <WoodFrame key={src} className="aspect-square">
+            (rawSrc) => (
+              <WoodFrame key={rawSrc} className="aspect-square">
                 <Image
-                  src={src}
+                  src={assetPath(rawSrc)}
                   alt=""
                   width={300}
                   height={300}
