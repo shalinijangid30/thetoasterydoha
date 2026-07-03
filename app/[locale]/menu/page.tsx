@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { WoodFrame } from "@/components/wood-frame";
+import { assetPath } from "@/lib/asset-path";
 
 type MenuItem = { name: string; desc: string; price: string };
 
@@ -28,13 +29,25 @@ export default async function MenuPage({
   const categories = categoryKeys.map((key) => ({ key }));
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
-      <div className="text-center mb-14">
-        <h1 className="text-4xl font-bold">{t("title")}</h1>
-        <p className="mt-3 text-ink/70">{t("subtitle")}</p>
-      </div>
+    <div className="relative bg-cream">
+      <div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `url(${assetPath("/images/menu-bg.jpeg")})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+        aria-hidden="true"
+      />
 
-      <div className="space-y-14">
+      <div className="relative mx-auto max-w-5xl px-6 py-16 md:py-24">
+        <div className="text-center mb-14">
+          <h1 className="text-4xl font-bold">{t("title")}</h1>
+          <p className="mt-3 text-ink/70">{t("subtitle")}</p>
+        </div>
+
+        <div className="space-y-14">
         {categories.map(({ key }) => {
           const items = t.raw(`items.${key}`) as MenuItem[];
           return (
@@ -57,10 +70,11 @@ export default async function MenuPage({
               </div>
             </div>
           );
-        })}
-      </div>
+          })}
+        </div>
 
-      <p className="text-center text-sm text-ink/50 mt-14">{t("note")}</p>
+        <p className="text-center text-sm text-ink/50 mt-14">{t("note")}</p>
+      </div>
     </div>
   );
 }
