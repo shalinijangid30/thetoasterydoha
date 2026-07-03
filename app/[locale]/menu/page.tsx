@@ -52,7 +52,7 @@ export default async function MenuPage({
           const items = t.raw(`items.${key}`) as MenuItem[];
           return (
             <div key={key}>
-              <h2 className="text-2xl font-semibold text-wood-dark mb-6 pb-2 border-b-2 border-butter inline-block">
+              <h2 className="text-2xl font-semibold text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.8)] mb-6 pb-2 border-b-2 border-butter inline-block">
                 {t(`categories.${key}`)}
               </h2>
               <div className="grid sm:grid-cols-2 gap-5">
