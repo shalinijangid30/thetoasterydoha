@@ -7,6 +7,9 @@
   --wood: #8a5a34;
   --wood-dark: #5e3b1f;
   --ink: #2c1c10;
+  --pastel-brown: #e8d9c5;
+  --pastel-gold: #c99a3f;
+  --pastel-green: #6f8f6a;
 }
 
 @theme inline {
@@ -16,6 +19,9 @@
   --color-wood: var(--wood);
   --color-wood-dark: var(--wood-dark);
   --color-ink: var(--ink);
+  --color-pastel-brown: var(--pastel-brown);
+  --color-pastel-gold: var(--pastel-gold);
+  --color-pastel-green: var(--pastel-green);
   --font-sans: var(--font-body);
   --font-arabic: var(--font-arabic);
 }
