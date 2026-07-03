@@ -14,7 +14,7 @@ export default async function ContactPage({
   return (
     <div className="relative bg-cream">
       <div
-        className="fixed inset-0 pointer-events-none"
+        className="fixed inset-0 opacity-40 pointer-events-none"
         style={{
           backgroundImage: `url(${assetPath("/images/contact-bg.jpeg")})`,
           backgroundSize: "cover",
