@@ -121,3 +121,20 @@ body {
 .animate-fade-in-up {
   animation: fade-in-up 0.8s ease-out 2.52s both;
 }
+
+@keyframes track-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-track-scroll {
+  animation: track-scroll 18s linear infinite;
+}
+
+.gallery-track:hover .animate-track-scroll {
+  animation-play-state: paused;
+}

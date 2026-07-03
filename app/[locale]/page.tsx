@@ -74,10 +74,19 @@ export default async function HomePage({
 
       <StripeSection>
         <h2 className="text-3xl font-bold mb-8">{h("galleryTitle")}</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {["/images/menu-1.jpeg", "/images/menu-2.jpeg", "/images/gallery-1.jpeg", "/images/gallery-2.jpeg"].map(
-            (rawSrc) => (
-              <WoodFrame key={rawSrc} className="aspect-square">
+        <div className="gallery-track -mx-6 overflow-hidden">
+          <div className="animate-track-scroll flex w-max gap-4 px-6">
+            {[
+              "/images/menu-1.jpeg",
+              "/images/menu-2.jpeg",
+              "/images/gallery-1.jpeg",
+              "/images/gallery-2.jpeg",
+              "/images/menu-1.jpeg",
+              "/images/menu-2.jpeg",
+              "/images/gallery-1.jpeg",
+              "/images/gallery-2.jpeg",
+            ].map((rawSrc, i) => (
+              <WoodFrame key={`${rawSrc}-${i}`} className="aspect-square w-56 shrink-0 md:w-64">
                 <Image
                   src={assetPath(rawSrc)}
                   alt=""
@@ -86,8 +95,8 @@ export default async function HomePage({
                   className="w-full h-full object-cover"
                 />
               </WoodFrame>
-            )
-          )}
+            ))}
+          </div>
         </div>
       </StripeSection>
 
