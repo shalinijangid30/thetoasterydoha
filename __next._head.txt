@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[97367,["/thetoastery/_next/static/chunks/05-c3ty_6dwfk.js","/thetoastery/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
-3:I[97367,["/thetoastery/_next/static/chunks/05-c3ty_6dwfk.js","/thetoastery/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+2:I[97367,["/thetoasterydoha/_next/static/chunks/05-c3ty_6dwfk.js","/thetoasterydoha/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+3:I[97367,["/thetoasterydoha/_next/static/chunks/05-c3ty_6dwfk.js","/thetoasterydoha/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
 4:"$Sreact.suspense"
-5:I[27201,["/thetoastery/_next/static/chunks/05-c3ty_6dwfk.js","/thetoastery/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
-0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","link","0",{"rel":"icon","href":"/thetoastery/icon.jpg?icon.1_vb1v9aybzpb.jpg","sizes":"750x744","type":"image/jpeg"}],["$","$L5","1",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"VKAWRzU1bIsd1LQbviorn"}
+5:I[27201,["/thetoasterydoha/_next/static/chunks/05-c3ty_6dwfk.js","/thetoasterydoha/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","link","0",{"rel":"icon","href":"/thetoasterydoha/icon.jpg?icon.1_vb1v9aybzpb.jpg","sizes":"750x744","type":"image/jpeg"}],["$","$L5","1",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"TDMz85RzvUwLtwTNtBQ6E"}
